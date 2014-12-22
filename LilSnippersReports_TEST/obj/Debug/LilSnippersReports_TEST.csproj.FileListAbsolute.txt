@@ -42,4 +42,3 @@ C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersRep
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\RdlCompile.compiled
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.dll
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.pdb
-C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.csprojResolveAssemblyReference.cache

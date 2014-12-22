@@ -10,51 +10,42 @@
 namespace LilSnippersReports_TEST {
     
     
-    public partial class Inventory {
+    public partial class media {
         
         /// <summary>
-        /// InvRepViewer control.
+        /// MediaReportViewer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.Reporting.WebForms.ReportViewer InvRepViewer;
+        protected global::Microsoft.Reporting.WebForms.ReportViewer MediaReportViewer;
         
         /// <summary>
-        /// InventoryView control.
+        /// MediaView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource InventoryView;
+        protected global::System.Web.UI.WebControls.ObjectDataSource MediaView;
         
         /// <summary>
-        /// InvProduct control.
+        /// MedMedia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource InvProduct;
+        protected global::System.Web.UI.WebControls.ObjectDataSource MedMedia;
         
         /// <summary>
-        /// InvProductType control.
+        /// MedMediaType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource InvProductType;
-        
-        /// <summary>
-        /// InvSupplier control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource InvSupplier;
+        protected global::System.Web.UI.WebControls.ObjectDataSource MedMediaType;
     }
 }
