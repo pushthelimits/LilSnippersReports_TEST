@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Media Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="inventory.aspx.cs" Inherits="LilSnippersReports_TEST.media" %>
+﻿<%@ Page Title="Media Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="media.aspx.cs" Inherits="LilSnippersReports_TEST.media" %>
 
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 

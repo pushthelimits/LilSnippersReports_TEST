@@ -165,6 +165,7 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="birthdays.aspx" />
     <Content Include="inventory.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -242,6 +243,17 @@
     <Content Include="Account\Web.config" />
     <Content Include="InventoryDataSet.xsc">
       <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="BirthdayDataSet.xsc">
+      <DependentUpon>BirthdayDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="BirthdayDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BirthdayDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="BirthdayDataSet.xss">
+      <DependentUpon>BirthdayDataSet.xsd</DependentUpon>
     </Content>
     <None Include="InventoryDataSet.xsd">
       <SubType>Designer</SubType>
@@ -347,6 +359,18 @@
     </Compile>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BirthdayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BirthdayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="birthdays.aspx.cs">
+      <DependentUpon>birthdays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="birthdays.aspx.designer.cs">
+      <DependentUpon>birthdays.aspx</DependentUpon>
+    </Compile>
     <Compile Include="inventory.aspx.cs">
       <DependentUpon>inventory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -443,6 +467,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="media.rdlc" />
+    <EmbeddedResource Include="birthdays.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="sales.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>

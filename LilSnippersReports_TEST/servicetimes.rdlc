@@ -524,7 +524,7 @@
           </Border>
         </Style>
       </Body>
-      <Width>5.13542in</Width>
+      <Width>5.07292in</Width>
       <Page>
         <PageFooter>
           <Height>0.40833in</Height>
@@ -548,7 +548,7 @@
               <rd:DefaultName>ExecutionTime</rd:DefaultName>
               <Top>0.06944in</Top>
               <Height>0.25in</Height>
-              <Width>1.8125in</Width>
+              <Width>1.6875in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -575,9 +575,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox8</rd:DefaultName>
               <Top>0.06944in</Top>
-              <Left>4.03125in</Left>
+              <Left>4.11458in</Left>
               <Height>0.25in</Height>
-              <Width>1.10417in</Width>
+              <Width>0.95834in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

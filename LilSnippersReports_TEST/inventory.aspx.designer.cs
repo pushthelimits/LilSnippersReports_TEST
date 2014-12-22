@@ -10,42 +10,6 @@
 namespace LilSnippersReports_TEST {
     
     
-    public partial class media {
-        
-        /// <summary>
-        /// MediaReportViewer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Microsoft.Reporting.WebForms.ReportViewer MediaReportViewer;
-        
-        /// <summary>
-        /// MediaView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource MediaView;
-        
-        /// <summary>
-        /// MedMedia control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource MedMedia;
-        
-        /// <summary>
-        /// MedMediaType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource MedMediaType;
+    public partial class birthdays {
     }
 }

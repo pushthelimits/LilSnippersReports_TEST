@@ -10,42 +10,51 @@
 namespace LilSnippersReports_TEST {
     
     
-    public partial class media {
+    public partial class birthdays {
         
         /// <summary>
-        /// MediaReportViewer control.
+        /// BirReportViewer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.Reporting.WebForms.ReportViewer MediaReportViewer;
+        protected global::Microsoft.Reporting.WebForms.ReportViewer BirReportViewer;
         
         /// <summary>
-        /// MediaView control.
+        /// BirthdayView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource MediaView;
+        protected global::System.Web.UI.WebControls.ObjectDataSource BirthdayView;
         
         /// <summary>
-        /// MedMedia control.
+        /// BirClient control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource MedMedia;
+        protected global::System.Web.UI.WebControls.ObjectDataSource BirClient;
         
         /// <summary>
-        /// MedMediaType control.
+        /// BirHomeAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource MedMediaType;
+        protected global::System.Web.UI.WebControls.ObjectDataSource BirHomeAddress;
+        
+        /// <summary>
+        /// BirParentGuardian control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource BirParentGuardian;
     }
 }
