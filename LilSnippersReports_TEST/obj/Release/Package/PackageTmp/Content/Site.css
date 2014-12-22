@@ -1,0 +1,33 @@
+﻿body	
+{
+background-color:#F2F8F2;
+font-family:"Segoe UI", sans-serif;
+line-height:1.8em;
+margin-left:20px;
+}
+
+h2
+{
+padding-bottom:22px;
+}
+
+    h2.reports {
+        padding-bottom: 0px;
+    }
+
+p
+{
+margin-left:20px;
+font-size:110%;
+}
+
+a
+{
+text-decoration:none;
+}
+
+a:link{color:#4AB825;}
+a:visited{color:#005C00;}
+a:hover{color:#006600;text-decoration:underline;}
+a:active{color:#337D33;}
+
