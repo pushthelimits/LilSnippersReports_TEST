@@ -1,4 +1,7 @@
-C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\DotNetOpenAuth.Core.xml
+C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.dll
+C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\RdlCompile.cache
+C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\RdlCompile.compiled
+C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.pdb
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\SqlServerTypes\x64\msvcr100.dll
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\SqlServerTypes\x64\SqlServerSpatial110.dll
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\SqlServerTypes\x86\msvcr100.dll
@@ -29,6 +32,7 @@ C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersRep
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\Microsoft.Windows.Design.Interaction.dll
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\Microsoft.Windows.Design.Extensibility.dll
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\EntityFramework.xml
+C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\DotNetOpenAuth.Core.xml
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\DotNetOpenAuth.OAuth.xml
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\DotNetOpenAuth.OAuth.Consumer.xml
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\DotNetOpenAuth.OpenId.xml
@@ -38,8 +42,4 @@ C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersRep
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\Microsoft.Windows.Design.Interaction.xml
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\bin\Microsoft.Windows.Design.Extensibility.xml
-C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\RdlCompile.cache
-C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\RdlCompile.compiled
-C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.dll
-C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.pdb
 C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\obj\Debug\LilSnippersReports_TEST.csprojResolveAssemblyReference.cache

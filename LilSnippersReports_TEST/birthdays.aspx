@@ -6,7 +6,7 @@
 
     <h2 class="reports">Birthday List</h2>
 
-    <rsweb:ReportViewer ID="BirReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" Height="545px" Width="645px" ShowBackButton="False" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
+    <rsweb:ReportViewer ID="BirReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" Height="545px" Width="649px" ShowBackButton="False" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
         <LocalReport ReportPath="birthdays.rdlc">
              <DataSources>
                 <rsweb:ReportDataSource DataSourceId="BirthdayView" Name="BirthdayView" />

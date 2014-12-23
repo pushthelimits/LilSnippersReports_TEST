@@ -7,7 +7,7 @@
     <h2 class="reports">Stylist Service Times</h2>
 
 
-    <rsweb:ReportViewer ID="SvcTimesReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Height="545px" Width="488px" ShowBackButton="False">
+    <rsweb:ReportViewer ID="SvcTimesReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Height="545px" Width="489px" ShowBackButton="False">
         <LocalReport ReportPath="servicetimes.rdlc">
             <DataSources>
                 <rsweb:ReportDataSource DataSourceId="StylistTimesView" Name="StylistTimesView" />

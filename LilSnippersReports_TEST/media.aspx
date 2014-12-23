@@ -6,7 +6,7 @@
 
     <h2 class="reports">Media List</h2>
 
-    <rsweb:ReportViewer ID="MediaReportViewer" runat="server" Height="545px" ShowBackButton="False" Width="517px" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
+    <rsweb:ReportViewer ID="MediaReportViewer" runat="server" Height="545px" ShowBackButton="False" Width="518px" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
         <LocalReport ReportPath="media.rdlc">
              <DataSources>
                 <rsweb:ReportDataSource DataSourceId="MediaView" Name="MediaView" />

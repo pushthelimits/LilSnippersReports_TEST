@@ -3,7 +3,9 @@
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
     <h3>Reports</h3>
   <%--  <a href="sales.aspx">Sales</a><br />--%>
+    <a href="birthdays.aspx">Birthday List</a><br />
     <a href="inventory.aspx">Inventory</a><br />
+    <a href="media.aspx">Media List</a><br />
     <a href="sales.aspx">Sales</a><br />
     <a href="servicetimes.aspx">Stylist Service Times</a><br />
 </asp:Content>
