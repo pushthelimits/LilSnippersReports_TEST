@@ -1,6 +1,6 @@
 ﻿body	
 {
-background-color:#F2F8F2;
+background-color:#FFFFFF;
 font-family:"Segoe UI", sans-serif;
 line-height:1.8em;
 margin-left:20px;
@@ -9,11 +9,20 @@ margin-left:20px;
 h2
 {
 padding-bottom:22px;
+font: "Seguoe UI", sans-serif;
+color: #666;
 }
 
-    h2.reports {
-        padding-bottom: 0px;
-    }
+h2.reports {
+padding-bottom: 0px;
+font: "Seguoe UI", sans-serif;
+color: #666;
+}
+
+h3 {
+    font: "Seguoe UI", sans-serif;
+    color: #666;
+}
 
 p
 {
@@ -26,8 +35,6 @@ a
 text-decoration:none;
 }
 
-a:link{color:#4AB825;}
-a:visited{color:#005C00;}
-a:hover{color:#006600;text-decoration:underline;}
-a:active{color:#337D33;}
+a:link{color:#028ADE;}
+a:hover{color:#000099;text-decoration:underline !important;}
 
