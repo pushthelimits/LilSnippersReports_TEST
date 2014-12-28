@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LilSnippersReports_TEST {
-    
-    
-    public partial class servicetimes {
-        
+namespace LilSnippersReports_TEST
+{
+
+
+    public partial class servicetimes
+    {
+
         /// <summary>
         /// SvcTimesReportViewer control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace LilSnippersReports_TEST {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.Reporting.WebForms.ReportViewer SvcTimesReportViewer;
-        
+
         /// <summary>
         /// SvcTimesStylistTimes control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace LilSnippersReports_TEST {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource SvcTimesStylistTimes;
-        
+
         /// <summary>
         /// SvcTimesEmployee control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace LilSnippersReports_TEST {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource SvcTimesEmployee;
-        
+
         /// <summary>
         /// StylistTimesView control.
         /// </summary>

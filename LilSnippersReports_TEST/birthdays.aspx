@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Birthdays Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="birthdays.aspx.cs" Inherits="LilSnippersReports_TEST.birthdays" %>
+﻿<%@ Page Title="Birthday List" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="birthdays.aspx.cs" Inherits="LilSnippersReports_TEST.birthdays" %>
 
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 

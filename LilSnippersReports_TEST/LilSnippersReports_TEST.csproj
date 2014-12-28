@@ -311,6 +311,18 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="weekselapsed.aspx" />
+    <Content Include="WeeksElapsedDataSet.xsc">
+      <DependentUpon>WeeksElapsedDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="WeeksElapsedDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeeksElapsedDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WeeksElapsedDataSet.xss">
+      <DependentUpon>WeeksElapsedDataSet.xsd</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\_references.js" />
@@ -476,6 +488,18 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="weekselapsed.aspx.cs">
+      <DependentUpon>weekselapsed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weekselapsed.aspx.designer.cs">
+      <DependentUpon>weekselapsed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeeksElapsedDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeeksElapsedDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -495,6 +519,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="client.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="weekselapsed.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="sales.rdlc">

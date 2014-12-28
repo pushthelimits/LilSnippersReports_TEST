@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Client Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="clientinfo.aspx.cs" Inherits="LilSnippersReports_TEST.clientinfo" %>
+﻿<%@ Page Title="Client List" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="clientinfo.aspx.cs" Inherits="LilSnippersReports_TEST.clientinfo" %>
 
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 

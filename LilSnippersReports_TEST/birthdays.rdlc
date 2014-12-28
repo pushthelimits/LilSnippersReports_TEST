@@ -845,7 +845,7 @@
       <Width>6.70833in</Width>
       <Page>
         <PageFooter>
-          <Height>0.3875in</Height>
+          <Height>0.725in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -857,16 +857,18 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Globals!ExecutionTime</Value>
-                      <Style />
+                      <Style>
+                        <Color>DimGray</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ExecutionTime</rd:DefaultName>
-              <Top>0.06944in</Top>
+              <Top>0.44444in</Top>
               <Height>0.25in</Height>
-              <Width>1.60417in</Width>
+              <Width>1.59375in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -885,17 +887,19 @@
                   <TextRuns>
                     <TextRun>
                       <Value>="Page " &amp; Globals.PageNumber &amp; " of " &amp; Globals.TotalPages</Value>
-                      <Style />
+                      <Style>
+                        <Color>DimGray</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox8</rd:DefaultName>
-              <Top>0.1in</Top>
-              <Left>5.70833in</Left>
+              <Top>0.475in</Top>
+              <Left>5.83333in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>0.875in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

@@ -459,7 +459,7 @@
                                 <Value>=Fields!EmpFirstName.Value+" "+Fields!EmpLastName.Value</Value>
                                 <Style>
                                   <FontFamily>Tahoma</FontFamily>
-                                  <FontWeight>Bold</FontWeight>
+                                  <FontWeight>Normal</FontWeight>
                                   <Color>DimGray</Color>
                                 </Style>
                               </TextRun>
@@ -527,7 +527,7 @@
       <Width>5.07292in</Width>
       <Page>
         <PageFooter>
-          <Height>0.40833in</Height>
+          <Height>0.69444in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -539,14 +539,16 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Globals!ExecutionTime</Value>
-                      <Style />
+                      <Style>
+                        <Color>DimGray</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ExecutionTime</rd:DefaultName>
-              <Top>0.06944in</Top>
+              <Top>0.44444in</Top>
               <Height>0.25in</Height>
               <Width>1.6875in</Width>
               <Style>
@@ -567,14 +569,16 @@
                   <TextRuns>
                     <TextRun>
                       <Value>="Page " &amp; Globals.PageNumber &amp; " of " &amp; Globals.TotalPages</Value>
-                      <Style />
+                      <Style>
+                        <Color>DimGray</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox8</rd:DefaultName>
-              <Top>0.06944in</Top>
+              <Top>0.44444in</Top>
               <Left>4.11458in</Left>
               <Height>0.25in</Height>
               <Width>0.95834in</Width>

@@ -7,47 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LilSnippersReports_TEST
-{
-
-
-    public partial class servicetimes
-    {
-
+namespace LilSnippersReports_TEST {
+    
+    
+    public partial class weekselapsed {
+        
         /// <summary>
-        /// SvcTimesReportViewer control.
+        /// WeeksElapsedReportViewer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.Reporting.WebForms.ReportViewer SvcTimesReportViewer;
-
+        protected global::Microsoft.Reporting.WebForms.ReportViewer WeeksElapsedReportViewer;
+        
         /// <summary>
-        /// SvcTimesStylistTimes control.
+        /// WksHomeAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource SvcTimesStylistTimes;
-
+        protected global::System.Web.UI.WebControls.ObjectDataSource WksHomeAddress;
+        
         /// <summary>
-        /// SvcTimesEmployee control.
+        /// WksTransactions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource SvcTimesEmployee;
-
+        protected global::System.Web.UI.WebControls.ObjectDataSource WksTransactions;
+        
         /// <summary>
-        /// StylistTimesView control.
+        /// WksTransDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource StylistTimesView;
+        protected global::System.Web.UI.WebControls.ObjectDataSource WksTransDetails;
+        
+        /// <summary>
+        /// WksWeeksElapsedView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource WksWeeksElapsedView;
     }
 }

@@ -9,4 +9,5 @@
     <a href="media.aspx">Media List</a><br />
     <a href="sales.aspx">Sales</a><br />
     <a href="servicetimes.aspx">Stylist Service Times</a><br />
+    <a href="weekselapsed.aspx">Weeks Elapsed</a>
 </asp:Content>
