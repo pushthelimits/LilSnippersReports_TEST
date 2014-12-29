@@ -12,7 +12,6 @@
                 <rsweb:ReportDataSource DataSourceId="BirthdayView" Name="BirthdayView" />
                 <rsweb:ReportDataSource DataSourceId="BirClient" Name="Client" />
                 <rsweb:ReportDataSource DataSourceId="BirHomeAddress" Name="HomeAddress" /> 
-                <rsweb:ReportDataSource DataSourceId="BirParentGuardian" Name="ParentGuardian" />
       </DataSources>
         </LocalReport>
     </rsweb:ReportViewer>
@@ -20,6 +19,5 @@
     <asp:ObjectDataSource ID="BirthdayView" runat="server" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.BirthdayViewTableAdapter" OldValuesParameterFormatString="original_{0}"></asp:ObjectDataSource>
     <asp:ObjectDataSource ID="BirClient" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.ClientTableAdapter"></asp:ObjectDataSource>
     <asp:ObjectDataSource ID="BirHomeAddress" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.HomeAddressTableAdapter"></asp:ObjectDataSource>
-    <asp:ObjectDataSource ID="BirParentGuardian" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.ParentGuardianTableAdapter"></asp:ObjectDataSource>
-
+  
 </asp:Content>

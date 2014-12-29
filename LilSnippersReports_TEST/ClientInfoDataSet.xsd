@@ -225,13 +225,14 @@
               <DbSource ConnectionRef="LilSnippers_TESTConnectionString (Web.config)" DbObjectName="LilSnippers_TEST.dbo.ClientView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT ClientFirstName, ClientLastName, MonthID, BirthDate, BirthYear, HaircutNotes, HomeAddress1, HomeAddress2, HomeCity, State, HomeZIP, HomePhone, HomeEmail, HearAbout, ParentFirstName, ParentLastName FROM dbo.ClientView</CommandText>
+                    <CommandText>SELECT HomeAddressID, ClientFirstName, ClientLastName, MonthID, BirthDate, BirthYear, HaircutNotes, HomeAddress1, HomeAddress2, HomeCity, State, HomeZIP, HomePhone, HomeEmail, HearAbout, ParentFirstName, ParentLastName FROM dbo.ClientView</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
             </MainSource>
             <Mappings>
+              <Mapping SourceColumn="HomeAddressID" DataSetColumn="HomeAddressID" />
               <Mapping SourceColumn="ClientFirstName" DataSetColumn="ClientFirstName" />
               <Mapping SourceColumn="ClientLastName" DataSetColumn="ClientLastName" />
               <Mapping SourceColumn="MonthID" DataSetColumn="MonthID" />
@@ -381,6 +382,7 @@
         <xs:element name="ClientView" msprop:Generator_TableClassName="ClientViewDataTable" msprop:Generator_TableVarName="tableClientView" msprop:Generator_TablePropName="ClientView" msprop:Generator_RowDeletingName="ClientViewRowDeleting" msprop:Generator_RowChangingName="ClientViewRowChanging" msprop:Generator_RowEvHandlerName="ClientViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientViewRowDeleted" msprop:Generator_UserTableName="ClientView" msprop:Generator_RowChangedName="ClientViewRowChanged" msprop:Generator_RowEvArgName="ClientViewRowChangeEvent" msprop:Generator_RowClassName="ClientViewRow">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="HomeAddressID" msprop:Generator_ColumnVarNameInTable="columnHomeAddressID" msprop:Generator_ColumnPropNameInRow="HomeAddressID" msprop:Generator_ColumnPropNameInTable="HomeAddressIDColumn" msprop:Generator_UserColumnName="HomeAddressID" type="xs:int" minOccurs="0" />
               <xs:element name="ClientFirstName" msprop:Generator_ColumnVarNameInTable="columnClientFirstName" msprop:Generator_ColumnPropNameInRow="ClientFirstName" msprop:Generator_ColumnPropNameInTable="ClientFirstNameColumn" msprop:Generator_UserColumnName="ClientFirstName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

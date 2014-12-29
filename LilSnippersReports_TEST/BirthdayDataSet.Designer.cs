@@ -28,13 +28,9 @@ namespace LilSnippersReports_TEST {
         
         private HomeAddressDataTable tableHomeAddress;
         
-        private ParentGuardianDataTable tableParentGuardian;
-        
         private BirthdayViewDataTable tableBirthdayView;
         
         private global::System.Data.DataRelation relationFK_Client_HomeAddress;
-        
-        private global::System.Data.DataRelation relationFK_ParentGuardian_HomeAddress;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -69,9 +65,6 @@ namespace LilSnippersReports_TEST {
                 }
                 if ((ds.Tables["HomeAddress"] != null)) {
                     base.Tables.Add(new HomeAddressDataTable(ds.Tables["HomeAddress"]));
-                }
-                if ((ds.Tables["ParentGuardian"] != null)) {
-                    base.Tables.Add(new ParentGuardianDataTable(ds.Tables["ParentGuardian"]));
                 }
                 if ((ds.Tables["BirthdayView"] != null)) {
                     base.Tables.Add(new BirthdayViewDataTable(ds.Tables["BirthdayView"]));
@@ -111,16 +104,6 @@ namespace LilSnippersReports_TEST {
         public HomeAddressDataTable HomeAddress {
             get {
                 return this.tableHomeAddress;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ParentGuardianDataTable ParentGuardian {
-            get {
-                return this.tableParentGuardian;
             }
         }
         
@@ -207,9 +190,6 @@ namespace LilSnippersReports_TEST {
                 if ((ds.Tables["HomeAddress"] != null)) {
                     base.Tables.Add(new HomeAddressDataTable(ds.Tables["HomeAddress"]));
                 }
-                if ((ds.Tables["ParentGuardian"] != null)) {
-                    base.Tables.Add(new ParentGuardianDataTable(ds.Tables["ParentGuardian"]));
-                }
                 if ((ds.Tables["BirthdayView"] != null)) {
                     base.Tables.Add(new BirthdayViewDataTable(ds.Tables["BirthdayView"]));
                 }
@@ -258,12 +238,6 @@ namespace LilSnippersReports_TEST {
                     this.tableHomeAddress.InitVars();
                 }
             }
-            this.tableParentGuardian = ((ParentGuardianDataTable)(base.Tables["ParentGuardian"]));
-            if ((initTable == true)) {
-                if ((this.tableParentGuardian != null)) {
-                    this.tableParentGuardian.InitVars();
-                }
-            }
             this.tableBirthdayView = ((BirthdayViewDataTable)(base.Tables["BirthdayView"]));
             if ((initTable == true)) {
                 if ((this.tableBirthdayView != null)) {
@@ -271,7 +245,6 @@ namespace LilSnippersReports_TEST {
                 }
             }
             this.relationFK_Client_HomeAddress = this.Relations["FK_Client_HomeAddress"];
-            this.relationFK_ParentGuardian_HomeAddress = this.Relations["FK_ParentGuardian_HomeAddress"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -286,18 +259,12 @@ namespace LilSnippersReports_TEST {
             base.Tables.Add(this.tableClient);
             this.tableHomeAddress = new HomeAddressDataTable();
             base.Tables.Add(this.tableHomeAddress);
-            this.tableParentGuardian = new ParentGuardianDataTable();
-            base.Tables.Add(this.tableParentGuardian);
             this.tableBirthdayView = new BirthdayViewDataTable();
             base.Tables.Add(this.tableBirthdayView);
             this.relationFK_Client_HomeAddress = new global::System.Data.DataRelation("FK_Client_HomeAddress", new global::System.Data.DataColumn[] {
                         this.tableHomeAddress.HomeAddressIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableClient.HomeAddressIDColumn}, false);
             this.Relations.Add(this.relationFK_Client_HomeAddress);
-            this.relationFK_ParentGuardian_HomeAddress = new global::System.Data.DataRelation("FK_ParentGuardian_HomeAddress", new global::System.Data.DataColumn[] {
-                        this.tableHomeAddress.HomeAddressIDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableParentGuardian.HomeAddressIDColumn}, false);
-            this.Relations.Add(this.relationFK_ParentGuardian_HomeAddress);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -309,12 +276,6 @@ namespace LilSnippersReports_TEST {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeHomeAddress() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeParentGuardian() {
             return false;
         }
         
@@ -384,9 +345,6 @@ namespace LilSnippersReports_TEST {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void HomeAddressRowChangeEventHandler(object sender, HomeAddressRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void ParentGuardianRowChangeEventHandler(object sender, ParentGuardianRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void BirthdayViewRowChangeEventHandler(object sender, BirthdayViewRowChangeEvent e);
@@ -1142,315 +1100,6 @@ namespace LilSnippersReports_TEST {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ParentGuardianDataTable : global::System.Data.TypedTableBase<ParentGuardianRow> {
-            
-            private global::System.Data.DataColumn columnParentGuardianID;
-            
-            private global::System.Data.DataColumn columnParentFirstName;
-            
-            private global::System.Data.DataColumn columnParentLastName;
-            
-            private global::System.Data.DataColumn columnHomeAddressID;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianDataTable() {
-                this.TableName = "ParentGuardian";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ParentGuardianDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected ParentGuardianDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ParentGuardianIDColumn {
-                get {
-                    return this.columnParentGuardianID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ParentFirstNameColumn {
-                get {
-                    return this.columnParentFirstName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ParentLastNameColumn {
-                get {
-                    return this.columnParentLastName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn HomeAddressIDColumn {
-                get {
-                    return this.columnHomeAddressID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRow this[int index] {
-                get {
-                    return ((ParentGuardianRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ParentGuardianRowChangeEventHandler ParentGuardianRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ParentGuardianRowChangeEventHandler ParentGuardianRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ParentGuardianRowChangeEventHandler ParentGuardianRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ParentGuardianRowChangeEventHandler ParentGuardianRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddParentGuardianRow(ParentGuardianRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRow AddParentGuardianRow(string ParentFirstName, string ParentLastName, HomeAddressRow parentHomeAddressRowByFK_ParentGuardian_HomeAddress) {
-                ParentGuardianRow rowParentGuardianRow = ((ParentGuardianRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        null,
-                        ParentFirstName,
-                        ParentLastName,
-                        null};
-                if ((parentHomeAddressRowByFK_ParentGuardian_HomeAddress != null)) {
-                    columnValuesArray[3] = parentHomeAddressRowByFK_ParentGuardian_HomeAddress[0];
-                }
-                rowParentGuardianRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowParentGuardianRow);
-                return rowParentGuardianRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRow FindByParentGuardianID(int ParentGuardianID) {
-                return ((ParentGuardianRow)(this.Rows.Find(new object[] {
-                            ParentGuardianID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                ParentGuardianDataTable cln = ((ParentGuardianDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new ParentGuardianDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal void InitVars() {
-                this.columnParentGuardianID = base.Columns["ParentGuardianID"];
-                this.columnParentFirstName = base.Columns["ParentFirstName"];
-                this.columnParentLastName = base.Columns["ParentLastName"];
-                this.columnHomeAddressID = base.Columns["HomeAddressID"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            private void InitClass() {
-                this.columnParentGuardianID = new global::System.Data.DataColumn("ParentGuardianID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnParentGuardianID);
-                this.columnParentFirstName = new global::System.Data.DataColumn("ParentFirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnParentFirstName);
-                this.columnParentLastName = new global::System.Data.DataColumn("ParentLastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnParentLastName);
-                this.columnHomeAddressID = new global::System.Data.DataColumn("HomeAddressID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHomeAddressID);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnParentGuardianID}, true));
-                this.columnParentGuardianID.AutoIncrement = true;
-                this.columnParentGuardianID.AutoIncrementSeed = -1;
-                this.columnParentGuardianID.AutoIncrementStep = -1;
-                this.columnParentGuardianID.AllowDBNull = false;
-                this.columnParentGuardianID.ReadOnly = true;
-                this.columnParentGuardianID.Unique = true;
-                this.columnParentFirstName.MaxLength = 50;
-                this.columnParentLastName.MaxLength = 50;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRow NewParentGuardianRow() {
-                return ((ParentGuardianRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ParentGuardianRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(ParentGuardianRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.ParentGuardianRowChanged != null)) {
-                    this.ParentGuardianRowChanged(this, new ParentGuardianRowChangeEvent(((ParentGuardianRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.ParentGuardianRowChanging != null)) {
-                    this.ParentGuardianRowChanging(this, new ParentGuardianRowChangeEvent(((ParentGuardianRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.ParentGuardianRowDeleted != null)) {
-                    this.ParentGuardianRowDeleted(this, new ParentGuardianRowChangeEvent(((ParentGuardianRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.ParentGuardianRowDeleting != null)) {
-                    this.ParentGuardianRowDeleting(this, new ParentGuardianRowChangeEvent(((ParentGuardianRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveParentGuardianRow(ParentGuardianRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BirthdayDataSet ds = new BirthdayDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ParentGuardianDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class BirthdayViewDataTable : global::System.Data.TypedTableBase<BirthdayViewRow> {
             
             private global::System.Data.DataColumn columnClientFirstName;
@@ -1464,10 +1113,6 @@ namespace LilSnippersReports_TEST {
             private global::System.Data.DataColumn columnBirthYear;
             
             private global::System.Data.DataColumn columnHomeEmail;
-            
-            private global::System.Data.DataColumn columnParentFirstName;
-            
-            private global::System.Data.DataColumn columnParentLastName;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1552,22 +1197,6 @@ namespace LilSnippersReports_TEST {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ParentFirstNameColumn {
-                get {
-                    return this.columnParentFirstName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ParentLastNameColumn {
-                get {
-                    return this.columnParentLastName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1603,7 +1232,7 @@ namespace LilSnippersReports_TEST {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BirthdayViewRow AddBirthdayViewRow(string ClientFirstName, string ClientLastName, int MonthID, int BirthDate, int BirthYear, string HomeEmail, string ParentFirstName, string ParentLastName) {
+            public BirthdayViewRow AddBirthdayViewRow(string ClientFirstName, string ClientLastName, int MonthID, int BirthDate, int BirthYear, string HomeEmail) {
                 BirthdayViewRow rowBirthdayViewRow = ((BirthdayViewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ClientFirstName,
@@ -1611,9 +1240,7 @@ namespace LilSnippersReports_TEST {
                         MonthID,
                         BirthDate,
                         BirthYear,
-                        HomeEmail,
-                        ParentFirstName,
-                        ParentLastName};
+                        HomeEmail};
                 rowBirthdayViewRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowBirthdayViewRow);
                 return rowBirthdayViewRow;
@@ -1642,8 +1269,6 @@ namespace LilSnippersReports_TEST {
                 this.columnBirthDate = base.Columns["BirthDate"];
                 this.columnBirthYear = base.Columns["BirthYear"];
                 this.columnHomeEmail = base.Columns["HomeEmail"];
-                this.columnParentFirstName = base.Columns["ParentFirstName"];
-                this.columnParentLastName = base.Columns["ParentLastName"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1661,15 +1286,9 @@ namespace LilSnippersReports_TEST {
                 base.Columns.Add(this.columnBirthYear);
                 this.columnHomeEmail = new global::System.Data.DataColumn("HomeEmail", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHomeEmail);
-                this.columnParentFirstName = new global::System.Data.DataColumn("ParentFirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnParentFirstName);
-                this.columnParentLastName = new global::System.Data.DataColumn("ParentLastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnParentLastName);
                 this.columnClientFirstName.MaxLength = 50;
                 this.columnClientLastName.MaxLength = 50;
                 this.columnHomeEmail.MaxLength = 50;
-                this.columnParentFirstName.MaxLength = 50;
-                this.columnParentLastName.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2288,138 +1907,6 @@ namespace LilSnippersReports_TEST {
                     return ((ClientRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Client_HomeAddress"])));
                 }
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRow[] GetParentGuardianRows() {
-                if ((this.Table.ChildRelations["FK_ParentGuardian_HomeAddress"] == null)) {
-                    return new ParentGuardianRow[0];
-                }
-                else {
-                    return ((ParentGuardianRow[])(base.GetChildRows(this.Table.ChildRelations["FK_ParentGuardian_HomeAddress"])));
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class ParentGuardianRow : global::System.Data.DataRow {
-            
-            private ParentGuardianDataTable tableParentGuardian;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ParentGuardianRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableParentGuardian = ((ParentGuardianDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int ParentGuardianID {
-                get {
-                    return ((int)(this[this.tableParentGuardian.ParentGuardianIDColumn]));
-                }
-                set {
-                    this[this.tableParentGuardian.ParentGuardianIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ParentFirstName {
-                get {
-                    try {
-                        return ((string)(this[this.tableParentGuardian.ParentFirstNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ParentFirstName\' in table \'ParentGuardian\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableParentGuardian.ParentFirstNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ParentLastName {
-                get {
-                    try {
-                        return ((string)(this[this.tableParentGuardian.ParentLastNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ParentLastName\' in table \'ParentGuardian\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableParentGuardian.ParentLastNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int HomeAddressID {
-                get {
-                    try {
-                        return ((int)(this[this.tableParentGuardian.HomeAddressIDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'HomeAddressID\' in table \'ParentGuardian\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableParentGuardian.HomeAddressIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public HomeAddressRow HomeAddressRow {
-                get {
-                    return ((HomeAddressRow)(this.GetParentRow(this.Table.ParentRelations["FK_ParentGuardian_HomeAddress"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_ParentGuardian_HomeAddress"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsParentFirstNameNull() {
-                return this.IsNull(this.tableParentGuardian.ParentFirstNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetParentFirstNameNull() {
-                this[this.tableParentGuardian.ParentFirstNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsParentLastNameNull() {
-                return this.IsNull(this.tableParentGuardian.ParentLastNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetParentLastNameNull() {
-                this[this.tableParentGuardian.ParentLastNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsHomeAddressIDNull() {
-                return this.IsNull(this.tableParentGuardian.HomeAddressIDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetHomeAddressIDNull() {
-                this[this.tableParentGuardian.HomeAddressIDColumn] = global::System.Convert.DBNull;
-            }
         }
         
         /// <summary>
@@ -2534,38 +2021,6 @@ namespace LilSnippersReports_TEST {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ParentFirstName {
-                get {
-                    try {
-                        return ((string)(this[this.tableBirthdayView.ParentFirstNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ParentFirstName\' in table \'BirthdayView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBirthdayView.ParentFirstNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ParentLastName {
-                get {
-                    try {
-                        return ((string)(this[this.tableBirthdayView.ParentLastNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ParentLastName\' in table \'BirthdayView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBirthdayView.ParentLastNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClientFirstNameNull() {
                 return this.IsNull(this.tableBirthdayView.ClientFirstNameColumn);
             }
@@ -2635,30 +2090,6 @@ namespace LilSnippersReports_TEST {
             public void SetHomeEmailNull() {
                 this[this.tableBirthdayView.HomeEmailColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsParentFirstNameNull() {
-                return this.IsNull(this.tableBirthdayView.ParentFirstNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetParentFirstNameNull() {
-                this[this.tableBirthdayView.ParentFirstNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsParentLastNameNull() {
-                return this.IsNull(this.tableBirthdayView.ParentLastNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetParentLastNameNull() {
-                this[this.tableBirthdayView.ParentLastNameColumn] = global::System.Convert.DBNull;
-            }
         }
         
         /// <summary>
@@ -2715,40 +2146,6 @@ namespace LilSnippersReports_TEST {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public HomeAddressRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class ParentGuardianRowChangeEvent : global::System.EventArgs {
-            
-            private ParentGuardianRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRowChangeEvent(ParentGuardianRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ParentGuardianRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3594,331 +2991,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ParentGuardianTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public ParentGuardianTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "ParentGuardian";
-            tableMapping.ColumnMappings.Add("ParentGuardianID", "ParentGuardianID");
-            tableMapping.ColumnMappings.Add("ParentFirstName", "ParentFirstName");
-            tableMapping.ColumnMappings.Add("ParentLastName", "ParentLastName");
-            tableMapping.ColumnMappings.Add("HomeAddressID", "HomeAddressID");
-            this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[ParentGuardian] WHERE (([ParentGuardianID] = @Original_ParentG" +
-                "uardianID))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ParentGuardianID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentGuardianID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ParentGuardian] ([ParentFirstName], [ParentLastName], [HomeAdd" +
-                "ressID]) VALUES (@ParentFirstName, @ParentLastName, @HomeAddressID)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentFirstName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentFirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentLastName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentLastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HomeAddressID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HomeAddressID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[ParentGuardian] SET [ParentFirstName] = @ParentFirstName, [ParentLa" +
-                "stName] = @ParentLastName, [HomeAddressID] = @HomeAddressID WHERE (([ParentGuard" +
-                "ianID] = @Original_ParentGuardianID))";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentFirstName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentFirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentLastName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentLastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HomeAddressID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HomeAddressID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ParentGuardianID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentGuardianID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["LilSnippers_TESTConnectionString"].ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ParentGuardianID, ParentFirstName, ParentLastName, HomeAddressID FROM dbo." +
-                "ParentGuardian";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BirthdayDataSet.ParentGuardianDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BirthdayDataSet.ParentGuardianDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            BirthdayDataSet.ParentGuardianDataTable dataTable = new BirthdayDataSet.ParentGuardianDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BirthdayDataSet.ParentGuardianDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BirthdayDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "ParentGuardian");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ParentGuardianID) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ParentGuardianID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ParentFirstName, string ParentLastName, global::System.Nullable<int> HomeAddressID) {
-            if ((ParentFirstName == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ParentFirstName));
-            }
-            if ((ParentLastName == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(ParentLastName));
-            }
-            if ((HomeAddressID.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(HomeAddressID.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ParentFirstName, string ParentLastName, global::System.Nullable<int> HomeAddressID, int Original_ParentGuardianID) {
-            if ((ParentFirstName == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(ParentFirstName));
-            }
-            if ((ParentLastName == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(ParentLastName));
-            }
-            if ((HomeAddressID.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(HomeAddressID.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_ParentGuardianID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class BirthdayViewTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -4037,8 +3109,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("BirthDate", "BirthDate");
             tableMapping.ColumnMappings.Add("BirthYear", "BirthYear");
             tableMapping.ColumnMappings.Add("HomeEmail", "HomeEmail");
-            tableMapping.ColumnMappings.Add("ParentFirstName", "ParentFirstName");
-            tableMapping.ColumnMappings.Add("ParentLastName", "ParentLastName");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -4055,8 +3125,8 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ClientFirstName, ClientLastName, MonthID, BirthDate, BirthYear, HomeEmail," +
-                " ParentFirstName, ParentLastName FROM dbo.BirthdayView";
+            this._commandCollection[0].CommandText = "SELECT ClientFirstName, ClientLastName, MonthID, BirthDate, BirthYear, HomeEmail " +
+                "FROM dbo.BirthdayView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4100,8 +3170,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
         private ClientTableAdapter _clientTableAdapter;
         
         private HomeAddressTableAdapter _homeAddressTableAdapter;
-        
-        private ParentGuardianTableAdapter _parentGuardianTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -4148,20 +3216,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public ParentGuardianTableAdapter ParentGuardianTableAdapter {
-            get {
-                return this._parentGuardianTableAdapter;
-            }
-            set {
-                this._parentGuardianTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -4187,10 +3241,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                             && (this._homeAddressTableAdapter.Connection != null))) {
                     return this._homeAddressTableAdapter.Connection;
                 }
-                if (((this._parentGuardianTableAdapter != null) 
-                            && (this._parentGuardianTableAdapter.Connection != null))) {
-                    return this._parentGuardianTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -4208,9 +3258,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                     count = (count + 1);
                 }
                 if ((this._homeAddressTableAdapter != null)) {
-                    count = (count + 1);
-                }
-                if ((this._parentGuardianTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -4242,15 +3289,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._parentGuardianTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.ParentGuardian.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._parentGuardianTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -4277,14 +3315,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._parentGuardianTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.ParentGuardian.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._parentGuardianTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -4295,14 +3325,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(BirthdayDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._parentGuardianTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.ParentGuardian.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._parentGuardianTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._clientTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Client.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -4368,11 +3390,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._parentGuardianTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._parentGuardianTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
-            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -4421,15 +3438,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                     if (this._homeAddressTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._homeAddressTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._homeAddressTableAdapter.Adapter);
-                    }
-                }
-                if ((this._parentGuardianTableAdapter != null)) {
-                    revertConnections.Add(this._parentGuardianTableAdapter, this._parentGuardianTableAdapter.Connection);
-                    this._parentGuardianTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._parentGuardianTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._parentGuardianTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._parentGuardianTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._parentGuardianTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -4497,10 +3505,6 @@ namespace LilSnippersReports_TEST.BirthdayDataSetTableAdapters {
                 if ((this._homeAddressTableAdapter != null)) {
                     this._homeAddressTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._homeAddressTableAdapter]));
                     this._homeAddressTableAdapter.Transaction = null;
-                }
-                if ((this._parentGuardianTableAdapter != null)) {
-                    this._parentGuardianTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._parentGuardianTableAdapter]));
-                    this._parentGuardianTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

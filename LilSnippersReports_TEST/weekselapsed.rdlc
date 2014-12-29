@@ -518,16 +518,16 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.94445in</Size>
+                        <Size>2.5in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox21">
+                          <Textbox Name="Textbox1">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Client Name</Value>
+                                    <Value>Email Address</Value>
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
                                       <FontSize>11pt</FontSize>
@@ -541,7 +541,7 @@
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox21</rd:DefaultName>
+                            <rd:DefaultName>Textbox1</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>White</Color>
@@ -579,16 +579,16 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.5in</Size>
+                            <Size>1.94445in</Size>
                             <CellContents>
-                              <Textbox Name="Textbox17">
+                              <Textbox Name="Textbox21">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>Email Address</Value>
+                                        <Value>Client Name</Value>
                                         <Style>
                                           <FontFamily>Tahoma</FontFamily>
                                           <FontSize>11pt</FontSize>
@@ -602,7 +602,7 @@
                                     </Style>
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>Textbox17</rd:DefaultName>
+                                <rd:DefaultName>Textbox21</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>White</Color>
@@ -717,27 +717,27 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="ClientFirstName">
+                      <Group Name="HomeEmail">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!ClientFirstName.Value</GroupExpression>
+                          <GroupExpression>=Fields!HomeEmail.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!ClientFirstName.Value</Value>
+                          <Value>=Fields!HomeEmail.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>1.94445in</Size>
+                        <Size>2.5in</Size>
                         <CellContents>
-                          <Textbox Name="ClientFirstName">
+                          <Textbox Name="HomeEmail">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!ClientFirstName.Value+" "+Fields!ClientLastName.Value</Value>
+                                    <Value>=Fields!HomeEmail.Value</Value>
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
                                       <FontWeight>Normal</FontWeight>
@@ -748,7 +748,7 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>ClientFirstName</rd:DefaultName>
+                            <rd:DefaultName>HomeEmail</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>Silver</Color>
@@ -785,27 +785,27 @@
                       </TablixHeader>
                       <TablixMembers>
                         <TablixMember>
-                          <Group Name="HomeEmail">
+                          <Group Name="ClientFirstName">
                             <GroupExpressions>
-                              <GroupExpression>=Fields!HomeEmail.Value</GroupExpression>
+                              <GroupExpression>=Fields!ClientFirstName.Value</GroupExpression>
                             </GroupExpressions>
                           </Group>
                           <SortExpressions>
                             <SortExpression>
-                              <Value>=Fields!HomeEmail.Value</Value>
+                              <Value>=Fields!ClientFirstName.Value</Value>
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>2.5in</Size>
+                            <Size>1.94445in</Size>
                             <CellContents>
-                              <Textbox Name="HomeEmail">
+                              <Textbox Name="ClientFirstName">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>=Fields!HomeEmail.Value</Value>
+                                        <Value>=Fields!ClientFirstName.Value+" "+Fields!ClientLastName.Value</Value>
                                         <Style>
                                           <FontFamily>Tahoma</FontFamily>
                                           <FontWeight>Normal</FontWeight>
@@ -816,7 +816,7 @@
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>HomeEmail</rd:DefaultName>
+                                <rd:DefaultName>ClientFirstName</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>Silver</Color>
@@ -864,6 +864,16 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>WeeksElapsedView</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=DateDiff("w",Fields!TransDate.Value,Now)</FilterExpression>
+                <Operator>Between</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Integer">4</FilterValue>
+                  <FilterValue DataType="Integer">24</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
             <Height>0.5in</Height>
             <Width>9.06237in</Width>
             <Style>

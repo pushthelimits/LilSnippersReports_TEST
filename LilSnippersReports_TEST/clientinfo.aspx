@@ -6,7 +6,7 @@
 
     <h2 class="reports">Client List</h2>
 
-    <rsweb:ReportViewer ID="ClientView" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" ShowBackButton="False" Width="1275px" Height="545px">
+    <rsweb:ReportViewer ID="ClientView" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" ShowBackButton="False" Width="1250px" Height="545px">
         <LocalReport ReportPath="client.rdlc">
              <DataSources>
                 <rsweb:ReportDataSource DataSourceId="ClientViewReportViewer" Name="ClientView" />
@@ -18,10 +18,10 @@
         </LocalReport>
     </rsweb:ReportViewer>
     <asp:ObjectDataSource ID="ClientViewReportViewer" runat="server" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.ClientInfoDataSetTableAdapters.ClientViewTableAdapter" OldValuesParameterFormatString="original_{0}"></asp:ObjectDataSource>
-    <asp:ObjectDataSource ID="ClClient" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.ClientTableAdapter"></asp:ObjectDataSource>
-    <asp:ObjectDataSource ID="ClParentGuardian" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.ParentGuardianTableAdapter"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ClClient" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.ClientInfoDataSetTableAdapters.ClientTableAdapter"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ClParentGuardian" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.ClientInfoDataSetTableAdapters.ParentGuardianTableAdapter"></asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ClHearAbout" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.ClientInfoDataSetTableAdapters.HearAboutTableAdapter"></asp:ObjectDataSource>
-    <asp:ObjectDataSource ID="ClHomeAddress" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.BirthdayDataSetTableAdapters.HomeAddressTableAdapter"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ClHomeAddress" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="LilSnippersReports_TEST.ClientInfoDataSetTableAdapters.HomeAddressTableAdapter"></asp:ObjectDataSource>
 
 
 

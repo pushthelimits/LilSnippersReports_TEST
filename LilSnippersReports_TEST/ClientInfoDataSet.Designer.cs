@@ -1776,6 +1776,8 @@ namespace LilSnippersReports_TEST {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ClientViewDataTable : global::System.Data.TypedTableBase<ClientViewRow> {
             
+            private global::System.Data.DataColumn columnHomeAddressID;
+            
             private global::System.Data.DataColumn columnClientFirstName;
             
             private global::System.Data.DataColumn columnClientLastName;
@@ -1839,6 +1841,14 @@ namespace LilSnippersReports_TEST {
             protected ClientViewDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HomeAddressIDColumn {
+                get {
+                    return this.columnHomeAddressID;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2007,6 +2017,7 @@ namespace LilSnippersReports_TEST {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public ClientViewRow AddClientViewRow(
+                        int HomeAddressID, 
                         string ClientFirstName, 
                         string ClientLastName, 
                         int MonthID, 
@@ -2025,6 +2036,7 @@ namespace LilSnippersReports_TEST {
                         string ParentLastName) {
                 ClientViewRow rowClientViewRow = ((ClientViewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        HomeAddressID,
                         ClientFirstName,
                         ClientLastName,
                         MonthID,
@@ -2063,6 +2075,7 @@ namespace LilSnippersReports_TEST {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnHomeAddressID = base.Columns["HomeAddressID"];
                 this.columnClientFirstName = base.Columns["ClientFirstName"];
                 this.columnClientLastName = base.Columns["ClientLastName"];
                 this.columnMonthID = base.Columns["MonthID"];
@@ -2084,6 +2097,8 @@ namespace LilSnippersReports_TEST {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnHomeAddressID = new global::System.Data.DataColumn("HomeAddressID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHomeAddressID);
                 this.columnClientFirstName = new global::System.Data.DataColumn("ClientFirstName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnClientFirstName);
                 this.columnClientLastName = new global::System.Data.DataColumn("ClientLastName", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2958,6 +2973,22 @@ namespace LilSnippersReports_TEST {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int HomeAddressID {
+                get {
+                    try {
+                        return ((int)(this[this.tableClientView.HomeAddressIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HomeAddressID\' in table \'ClientView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableClientView.HomeAddressIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string ClientFirstName {
                 get {
                     try {
@@ -3200,6 +3231,18 @@ namespace LilSnippersReports_TEST {
                 set {
                     this[this.tableClientView.ParentLastNameColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsHomeAddressIDNull() {
+                return this.IsNull(this.tableClientView.HomeAddressIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetHomeAddressIDNull() {
+                this[this.tableClientView.HomeAddressIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5066,6 +5109,7 @@ namespace LilSnippersReports_TEST.ClientInfoDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "ClientView";
+            tableMapping.ColumnMappings.Add("HomeAddressID", "HomeAddressID");
             tableMapping.ColumnMappings.Add("ClientFirstName", "ClientFirstName");
             tableMapping.ColumnMappings.Add("ClientLastName", "ClientLastName");
             tableMapping.ColumnMappings.Add("MonthID", "MonthID");
@@ -5098,9 +5142,9 @@ namespace LilSnippersReports_TEST.ClientInfoDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ClientFirstName, ClientLastName, MonthID, BirthDate, BirthYear, HaircutNot" +
-                "es, HomeAddress1, HomeAddress2, HomeCity, State, HomeZIP, HomePhone, HomeEmail, " +
-                "HearAbout, ParentFirstName, ParentLastName FROM dbo.ClientView";
+            this._commandCollection[0].CommandText = "SELECT HomeAddressID, ClientFirstName, ClientLastName, MonthID, BirthDate, BirthY" +
+                "ear, HaircutNotes, HomeAddress1, HomeAddress2, HomeCity, State, HomeZIP, HomePho" +
+                "ne, HomeEmail, HearAbout, ParentFirstName, ParentLastName FROM dbo.ClientView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

@@ -42,14 +42,6 @@
           <DataField>HomeEmail</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ParentFirstName">
-          <DataField>ParentFirstName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ParentLastName">
-          <DataField>ParentLastName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>BirthdayDataSet</rd:DataSetName>
@@ -158,38 +150,6 @@
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
         <rd:TableAdapterName>HomeAddressTableAdapter</rd:TableAdapterName>
-      </rd:DataSetInfo>
-    </DataSet>
-    <DataSet Name="ParentGuardian">
-      <Query>
-        <DataSourceName>BirthdayDataSet</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="ParentGuardianID">
-          <DataField>ParentGuardianID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ParentFirstName">
-          <DataField>ParentFirstName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ParentLastName">
-          <DataField>ParentLastName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HomeAddressID">
-          <DataField>HomeAddressID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>BirthdayDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Bonnie Kirkpatrick\Documents\Visual Studio 2012\Projects\LilSnippersReports_TEST\LilSnippersReports_TEST\BirthdayDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>ParentGuardian</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>ParentGuardianTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
